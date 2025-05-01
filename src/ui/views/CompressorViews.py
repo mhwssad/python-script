@@ -1,7 +1,5 @@
-from typing import List
-
-from PySide6.QtCore import QModelIndex, Qt, QAbstractTableModel
-from PySide6.QtWidgets import QWidget, QVBoxLayout, QApplication, QSpacerItem, QSizePolicy, QTableView
+from PySide6.QtCore import Qt, QAbstractTableModel
+from PySide6.QtWidgets import QWidget, QVBoxLayout, QApplication, QTableView, QPushButton
 
 
 class TableModel(QAbstractTableModel):
@@ -84,10 +82,12 @@ class CompressorViews(QWidget):
         self.header = ["ID", "文件名", "文件大小", "文件路径", "输出路径"]
         self.table = QTableView(self)
         self.setLayout(self.layout)
-        self.__init_ui()
+        self.setup_ui()
 
-    def __init_ui(self):
-        pass
+    def setup_ui(self):
+        button = QPushButton("添加行")
+        button = QPushButton("删除行")
+
 
 
 if __name__ == "__main__":

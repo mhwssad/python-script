@@ -3,7 +3,7 @@ import subprocess
 import threading
 from abc import ABC, abstractmethod
 from concurrent.futures import ThreadPoolExecutor
-from typing import List, Union, Optional, TypeVar, Callable
+from typing import List, Union
 
 from config.unzip_cinfig import log_file
 from src.exceptions.unzip_excepotion import CompressionError, TerminationError, TerminationMESSAGE

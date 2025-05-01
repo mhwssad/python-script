@@ -1,4 +1,4 @@
-from PySide6.QtWidgets import (QPushButton, QMenu, QStyle, QStyleOptionButton)
+from PySide6.QtWidgets import (QPushButton, QStyle, QStyleOptionButton)
 from PySide6.QtGui import QIcon, QPainter, QColor
 from PySide6.QtCore import Qt, QSize, Signal, Property, QPropertyAnimation, QEasingCurve
 
